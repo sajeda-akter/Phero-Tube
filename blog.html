@@ -10,16 +10,49 @@
 <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
-    <div class="hero min-h-screen bg-base-200">
-        <div class="hero-content flex-col lg:flex-row">
-          <img src="/images/stock/photo-1635805737707-575885ab0820.jpg" class="max-w-sm rounded-lg shadow-2xl" />
-          <div>
-            <h1 class="text-5xl font-bold">Box Office News!</h1>
-            <p class="py-6">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
-            <button class="btn btn-primary">Get Started</button>
-          </div>
-        </div>
-      </div>
+  <div class="collapse bg-base-200">
+    <input type="radio" name="my-accordion-1" checked="checked" /> 
+    <div class="collapse-title text-xl font-medium">
+      Discuss the scope of var, let, and const?
+    </div>
+    <div class="collapse-content"> 
+    <p> 
+      <span>Var:</span>
+      Function Scope: Variables declared with var are function-scoped, which means they are only accessible within the function in which they are defined.
+Hoisting: Variables declared with var are hoisted to the top of their containing function or global scope. This means that you can use a var variable before it's declared in the code, but it will be initialized with the value undefined.
+Global Scope: If a var variable is declared outside of any function, it becomes a global variable and is accessible throughout the entire program. <br> <br>
+<span>let:</span>Block Scope: Variables declared with let have block scope, which means they are only accessible within the block (enclosed by curly braces) in which they are defined.
+No Hoisting: Unlike var, variables declared with let are not hoisted, and trying to access them before their declaration will result in a ReferenceError. <br> <br>
+
+<span>const:</span>Block Scope: Like let, variables declared with const are block-scoped.
+Constant Value: Variables declared with const cannot be reassigned after their initial assignment. This makes them suitable for defining constants.
+No Hoisting: Similar to let, const variables are not hoisted, and referencing them before their declaration results in a ReferenceError.
+    </p>
+    </div>
+  </div>
+  <div class="collapse bg-base-200 my-4">
+    <input type="radio" name="my-accordion-1" /> 
+    <div class="collapse-title text-xl font-medium">
+      Tell us the use cases of null and undefined?
+    </div>
+    <div class="collapse-content"> 
+      <p>
+<span>Null:</span>Explicit Absence of Value: null is often used as a value to indicate the explicit absence of any object or value. It is typically assigned to a variable to signify that the variable has no meaningful value or that an object property or array element should be empty or cleared. <br><br>
+<span>Undefined:</span>Default Value: When a variable is declared but not initialized, or when a function does not return a value, the variable is automatically assigned the value undefined.Missing Function Arguments: In JavaScript, function arguments that are not provided by the caller are also undefined. This can be used to check whether optional parameters are passed to a function.
+
+      </p>
+    </div>
+  </div>
+  <div class="collapse bg-base-200">
+    <input type="radio" name="my-accordion-1" /> 
+    <div class="collapse-title text-xl font-medium">
+      What do you mean by REST API?
+    </div>
+    <div class="collapse-content"> 
+      <p>
+        REST API, which stands for Representational State Transfer Application Programming Interface, is a set of constraints and principles for designing and interacting with web services. It is an architectural style for building networked applications, particularly web services, that use HTTP as their communication protocol. REST APIs are designed to be simple, stateless, and scalable, making them a popular choice for building web services.</p>
+    </div>
+  </div>
     
 </body>
 </html>
