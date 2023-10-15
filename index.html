@@ -1,16 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>PheroTube</title>
-    
-<link href="https://cdn.jsdelivr.net/npm/daisyui@3.9.2/dist/full.css" rel="stylesheet" type="text/css" />
-<script src="https://cdn.tailwindcss.com"></script>
-</head>
-<body>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@3.9.2/dist/full.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- =====font awesome link ===== -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <style>
+      
+    </style>
+  </head>
+  <body>
     <header>
-        <h1><span>PH</span> Tube</h1>
+      <div class="flex items-center justify-between flex-col px-4 lg:px-32 py-4 gap-4 md:flex-row lg:flex-row">
+        <img src="images/Logo.png" alt="" class=""/>
+        <button
+          onclick="sortByView()"
+          id="shortByView"
+          class="rounded bg-gray-200 px-8 py-2"
+        >
+          Sort by view
+        </button>
+        <a
+          href="blog.html"
+          target="_blank"
+          class="bg-indigo-900 hover:bg-indigo-950 text-white px-12 py-2 rounded text-xl"
+          >Blog</a
+        >
+      </div>
     </header>
-</body>
+
+    <div class="divider w-11/12 mx-auto"></div>
+    <main>
+      <!-- category section -->
+
+      <section
+        class="flex justify-center gap-5"
+        id="category-container"
+      ></section>
+
+      <!-- display all categories -->
+      <section id="main-container lg:px-24">
+        <div
+          id="all-category"
+          class="change grid justify-center items-center grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-2 mt-20 ml-12 lg:ml-8"
+        ></div>
+      </section>
+    </main>
+
+    <script src="main.js"></script>
+  </body>
 </html>
